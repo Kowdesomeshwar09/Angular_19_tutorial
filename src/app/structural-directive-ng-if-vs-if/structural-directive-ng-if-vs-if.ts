@@ -9,7 +9,15 @@ import { Component } from '@angular/core';
 })
 export class StructuralDirectiveNgIfVsIf {
   isChecked: boolean = false;
+  isInputbox: boolean = true;
   onClick() {
     this.isChecked = !this.isChecked;
+  }
+  showField() {
+    this.isInputbox = true;
+  }
+
+  hideField() {
+    this.isInputbox = false;
   }
 }
