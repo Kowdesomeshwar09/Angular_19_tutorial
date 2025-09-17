@@ -1,0 +1,52 @@
+<div align="center">
+  <h2>One Way Data Binding</h2>
+  <div>
+    <p>1. Interpolation:</p>
+    <p>
+      <b>{{ name }}</b> {{ topic }}
+    </p>
+  </div>
+  <div>
+    <p>2. property binding:</p>
+    <div style="margin-bottom: 20px">
+      <input type="text" [value]="topic" />
+    </div>
+    <div
+      style="
+        gap: 10px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        border-radius: 10px;
+        background-color: lightblue;    
+        border: 2px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <img [src]="image" alt="" />
+    </div>
+  </div>
+  <div>
+    <p>3.Event Binding:</p>
+    <div
+      style="display: flex; flex-direction: row; gap: 10px; width: 300px; justify-content: center"
+    >
+      <button (click)="onSave()">save</button>
+      <select (change)="onChange()">
+        <option value="County">County</option>
+        <option value="India">I n d i a</option>
+        <option value="USA">U S A</option>
+        <option value="UK">U K</option>
+        <option value="Australia">A u s t r a l i a</option>
+      </select>
+    </div>
+  </div>
+  <div>
+    <p>4. Two Way Data Binding:</p>
+    <input type="text" [(ngModel)]="topic" />
+    {{ topic }}
+  </div>
+</div>

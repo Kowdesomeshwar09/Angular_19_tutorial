@@ -1,0 +1,21 @@
+<div class="row text-center">
+  <div class="col-12 m-3">
+    <b>Example of *ngIf vs if</b>
+  </div>
+</div>
+<div class="row text-center">
+  <div class="col-4">
+    <div (click)="onClick()">
+      <input type="checkbox" />
+      Terms and Conditions
+    </div>
+    <div *ngIf="isChecked">
+      <button class="btn btn-success">Submit</button>
+    </div>
+  </div>
+  <div class="col-4">
+    <button class="btn btn-primary m-2" (click)="showField()">show</button>
+    <button class="btn btn-danger" (click)="hideField()">hide</button>
+  </div>
+  <div class="col-4"></div>
+</div>

@@ -27,7 +27,11 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "D:/Angular-learning/Angular_19_tutorial/node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "D:/Angular-learning/Angular_19_tutorial/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -85,12 +89,13 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "cb4681f3-c9c0-47de-93ca-954c24486d70"
   }
 }
