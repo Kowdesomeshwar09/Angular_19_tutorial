@@ -4,10 +4,18 @@ import { User } from './user/user';
 import { DataBinding } from './data-binding/data-binding';
 import { Directive } from './directive/directive';
 import { StructuralDirectiveNgIfVsIf } from './structural-directive-ng-if-vs-if/structural-directive-ng-if-vs-if';
+import { StructuralDirectiveNgforVsFor } from './structural-directive-ngfor-vs-for/structural-directive-ngfor-vs-for';
 @Component({
   // standalone: true,
   selector: 'app-root',
-  imports: [RouterOutlet, User, DataBinding, Directive, StructuralDirectiveNgIfVsIf],
+  imports: [
+    RouterOutlet,
+    User,
+    DataBinding,
+    Directive,
+    StructuralDirectiveNgIfVsIf,
+    StructuralDirectiveNgforVsFor,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
